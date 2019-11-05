@@ -1,0 +1,17 @@
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\bin\Debug\netstandard2.0\StarterPAW.deps.json
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\bin\Debug\netstandard2.0\StarterPAW.dll
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\bin\Debug\netstandard2.0\ref\StarterPAW.dll
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\bin\Debug\netstandard2.0\StarterPAW.pdb
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\StarterPAW.csprojAssemblyReference.cache
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\Views\ItemDetailPage.xaml.g.cs
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\Views\ItemsPage.xaml.g.cs
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\Views\NewItemPage.xaml.g.cs
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\StarterPAW.AssemblyInfoInputs.cache
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\StarterPAW.AssemblyInfo.cs
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\StarterPAW.dll
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\ref\StarterPAW.dll
+C:\Users\debra\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\StarterPAW.pdb
