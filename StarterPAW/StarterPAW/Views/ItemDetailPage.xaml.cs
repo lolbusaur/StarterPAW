@@ -28,8 +28,7 @@ namespace StarterPAW.Views
 
             var item = new Item
             {
-                Text = "Item 1",
-                Description = "This is an item description."
+               Time = "00:00:00"
             };
 
             viewModel = new ItemDetailViewModel(item);

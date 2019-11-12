@@ -21,8 +21,8 @@ namespace StarterPAW.Views
 
             Item = new Item
             {
-                Text = "Item name",
-                Description = "This is an item description."
+                Time = "00:00:00",
+                Date = "01/01/1970"
             };
 
             BindingContext = this;

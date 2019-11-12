@@ -1911,24 +1911,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\debra\\.nuget\\packages\\": {},
+    "C:\\Users\\H362723\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\debra\\source\\repos\\StarterPAW\\StarterPAW\\StarterPAW.Android\\StarterPAW.Android.csproj",
+      "projectUniqueName": "C:\\Users\\H362723\\source\\repos\\StarterPAW\\StarterPAW\\StarterPAW.Android\\StarterPAW.Android.csproj",
       "projectName": "StarterPAW.Android",
-      "projectPath": "C:\\Users\\debra\\source\\repos\\StarterPAW\\StarterPAW\\StarterPAW.Android\\StarterPAW.Android.csproj",
-      "packagesPath": "C:\\Users\\debra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\debra\\source\\repos\\StarterPAW\\StarterPAW\\StarterPAW.Android\\obj\\",
+      "projectPath": "C:\\Users\\H362723\\source\\repos\\StarterPAW\\StarterPAW\\StarterPAW.Android\\StarterPAW.Android.csproj",
+      "packagesPath": "C:\\Users\\H362723\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\H362723\\source\\repos\\StarterPAW\\StarterPAW\\StarterPAW.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\debra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\H362723\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1942,8 +1942,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\debra\\source\\repos\\StarterPAW\\StarterPAW\\StarterPAW\\StarterPAW.csproj": {
-              "projectPath": "C:\\Users\\debra\\source\\repos\\StarterPAW\\StarterPAW\\StarterPAW\\StarterPAW.csproj"
+            "C:\\Users\\H362723\\source\\repos\\StarterPAW\\StarterPAW\\StarterPAW\\StarterPAW.csproj": {
+              "projectPath": "C:\\Users\\H362723\\source\\repos\\StarterPAW\\StarterPAW\\StarterPAW\\StarterPAW.csproj"
             }
           }
         }
