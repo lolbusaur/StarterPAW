@@ -14,12 +14,7 @@ namespace StarterPAW.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), Time = "12:51:21", Date = "12/12/12"},
-                new Item { Id = Guid.NewGuid().ToString(), Time = "23:17:05", Date = "12/13/12"},
-                new Item { Id = Guid.NewGuid().ToString(), Time = "01:48:16", Date = "12/14/12"},
-                new Item { Id = Guid.NewGuid().ToString(), Time = "08:33:28", Date = "12/15/12"},
-                new Item { Id = Guid.NewGuid().ToString(), Time = "12:06:14", Date = "12/16/12"},
-                new Item { Id = Guid.NewGuid().ToString(), Time = "18:27:51", Date = "12/17/12"}
+
             };
         }
 

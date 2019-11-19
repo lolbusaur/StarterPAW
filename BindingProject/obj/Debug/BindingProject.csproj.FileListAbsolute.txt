@@ -1,0 +1,6 @@
+C:\Users\H362723\source\repos\StarterPAW\BindingProject\bin\Debug\BindingProject.dll
+C:\Users\H362723\source\repos\StarterPAW\BindingProject\bin\Debug\BindingProject.pdb
+C:\Users\H362723\source\repos\StarterPAW\BindingProject\obj\Debug\BindingProject.csprojAssemblyReference.cache
+C:\Users\H362723\source\repos\StarterPAW\BindingProject\obj\Debug\BindingProject.csproj.CoreCompileInputs.cache
+C:\Users\H362723\source\repos\StarterPAW\BindingProject\obj\Debug\BindingProject.dll
+C:\Users\H362723\source\repos\StarterPAW\BindingProject\obj\Debug\BindingProject.pdb

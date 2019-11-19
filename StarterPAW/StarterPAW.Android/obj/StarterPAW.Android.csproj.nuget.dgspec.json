@@ -4,6 +4,17 @@
     "C:\\Users\\H362723\\source\\repos\\StarterPAW\\StarterPAW\\StarterPAW.Android\\StarterPAW.Android.csproj": {}
   },
   "projects": {
+    "C:\\Users\\H362723\\source\\repos\\StarterPAW\\BindingProject\\BindingProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\H362723\\source\\repos\\StarterPAW\\BindingProject\\BindingProject.csproj",
+        "projectName": "BindingProject",
+        "projectPath": "C:\\Users\\H362723\\source\\repos\\StarterPAW\\BindingProject\\BindingProject.csproj"
+      },
+      "frameworks": {
+        "monoandroid90": {}
+      }
+    },
     "C:\\Users\\H362723\\source\\repos\\StarterPAW\\StarterPAW\\StarterPAW.Android\\StarterPAW.Android.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -85,7 +96,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\H362723\\source\\repos\\StarterPAW\\BindingProject\\BindingProject.csproj": {
+                "projectPath": "C:\\Users\\H362723\\source\\repos\\StarterPAW\\BindingProject\\BindingProject.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

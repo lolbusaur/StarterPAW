@@ -33,3 +33,7 @@ C:\Users\H362723\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstan
 C:\Users\H362723\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\ref\StarterPAW.dll
 C:\Users\H362723\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\StarterPAW.pdb
 C:\Users\H362723\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\Views\ViewSuggestedTimes.xaml.g.cs
+C:\Users\H362723\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\Views\ViewVideo.xaml.g.cs
+C:\Users\H362723\source\repos\StarterPAW\StarterPAW\StarterPAW\bin\Debug\netstandard2.0\BindingProject.dll
+C:\Users\H362723\source\repos\StarterPAW\StarterPAW\StarterPAW\bin\Debug\netstandard2.0\BindingProject.pdb
+C:\Users\H362723\source\repos\StarterPAW\StarterPAW\StarterPAW\obj\Debug\netstandard2.0\StarterPAW.csproj.CopyComplete

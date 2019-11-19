@@ -63,6 +63,15 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
+      },
+      "BindingProject/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/BindingProject.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BindingProject.dll": {}
+        }
       }
     }
   },
@@ -545,10 +554,16 @@
         "xamarin.forms.4.2.0.709249.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "BindingProject/1.0.0": {
+      "type": "project",
+      "path": "../../BindingProject/BindingProject.csproj",
+      "msbuildProject": "../../BindingProject/BindingProject.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "BindingProject >= 1.0.0",
       "NETStandard.Library >= 2.0.3",
       "Xamarin.Essentials >= 1.2.0",
       "Xamarin.Forms >= 4.2.0.709249"
@@ -586,7 +601,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\H362723\\source\\repos\\StarterPAW\\BindingProject\\BindingProject.csproj": {
+              "projectPath": "C:\\Users\\H362723\\source\\repos\\StarterPAW\\BindingProject\\BindingProject.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

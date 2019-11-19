@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<api>
+  <package name="com.camera.simplemjpeg" jni-name="com/camera/simplemjpeg">
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="BuildConfig" static="false" visibility="public" jni-signature="Lcom/camera/simplemjpeg/BuildConfig;">
+      <constructor deprecated="not deprecated" final="false" name="BuildConfig" jni-signature="()V" bridge="false" static="false" type="com.camera.simplemjpeg.BuildConfig" synthetic="false" visibility="public"></constructor>
+      <field deprecated="not deprecated" final="true" name="DEBUG" jni-signature="Z" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="true" visibility="public" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.app.Activity" extends-generic-aware="android.app.Activity" jni-extends="Landroid/app/Activity;" final="false" name="MjpegActivity" static="false" visibility="public" jni-signature="Lcom/camera/simplemjpeg/MjpegActivity;">
+      <constructor deprecated="not deprecated" final="false" name="MjpegActivity" jni-signature="()V" bridge="false" static="false" type="com.camera.simplemjpeg.MjpegActivity" synthetic="false" visibility="public"></constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onCreate" jni-signature="(Landroid/os/Bundle;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="savedInstanceState" type="android.os.Bundle" jni-type="Landroid/os/Bundle;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onDestroy" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onPause" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onResume" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onStart" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="onStop" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setImageError" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="false" name="MjpegActivity.1" static="false" visibility="" jni-signature="Lcom/camera/simplemjpeg/MjpegActivity$1;">
+      <implements name="java.lang.Runnable" name-generic-aware="java.lang.Runnable" jni-type="Ljava/lang/Runnable;"></implements>
+      <method abstract="false" deprecated="not deprecated" final="false" name="run" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.io.DataInputStream" extends-generic-aware="java.io.DataInputStream" jni-extends="Ljava/io/DataInputStream;" final="false" name="MjpegInputStream" static="false" visibility="public" jni-signature="Lcom/camera/simplemjpeg/MjpegInputStream;">
+      <constructor deprecated="not deprecated" final="false" name="MjpegInputStream" jni-signature="(Ljava/io/InputStream;)V" bridge="false" static="false" type="com.camera.simplemjpeg.MjpegInputStream" synthetic="false" visibility="public">
+        <parameter name="in" type="java.io.InputStream" jni-type="Ljava/io/InputStream;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="freeCameraMemory" jni-signature="()V" bridge="false" native="true" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="pixeltobmp" jni-signature="([BILandroid/graphics/Bitmap;)I" bridge="false" native="true" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p0" type="byte[]" jni-type="[B"></parameter>
+        <parameter name="p1" type="int" jni-type="I"></parameter>
+        <parameter name="p2" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="read" jni-signature="(Ljava/lang/String;)Lcom/camera/simplemjpeg/MjpegInputStream;" bridge="false" native="false" return="com.camera.simplemjpeg.MjpegInputStream" jni-return="Lcom/camera/simplemjpeg/MjpegInputStream;" static="true" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="surl" type="java.lang.String" jni-type="Ljava/lang/String;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="readMjpegFrame" jni-signature="()Landroid/graphics/Bitmap;" bridge="false" native="false" return="android.graphics.Bitmap" jni-return="Landroid/graphics/Bitmap;" static="false" synchronized="false" synthetic="false" visibility="public">
+        <exception name="IOException" type="java.io.IOException"></exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="readMjpegFrame" jni-signature="(Landroid/graphics/Bitmap;)I" bridge="false" native="false" return="int" jni-return="I" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="bmp" type="android.graphics.Bitmap" jni-type="Landroid/graphics/Bitmap;"></parameter>
+        <exception name="IOException" type="java.io.IOException"></exception>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSkip" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="s" type="int" jni-type="I"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="android.view.SurfaceView" extends-generic-aware="android.view.SurfaceView" jni-extends="Landroid/view/SurfaceView;" final="false" name="MjpegView" static="false" visibility="public" jni-signature="Lcom/camera/simplemjpeg/MjpegView;">
+      <implements name="android.view.SurfaceHolder.Callback" name-generic-aware="android.view.SurfaceHolder.Callback" jni-type="Landroid/view/SurfaceHolder$Callback;"></implements>
+      <constructor deprecated="not deprecated" final="false" name="MjpegView" jni-signature="(Landroid/content/Context;)V" bridge="false" static="false" type="com.camera.simplemjpeg.MjpegView" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+      </constructor>
+      <constructor deprecated="not deprecated" final="false" name="MjpegView" jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;)V" bridge="false" static="false" type="com.camera.simplemjpeg.MjpegView" synthetic="false" visibility="public">
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+        <parameter name="attrs" type="android.util.AttributeSet" jni-type="Landroid/util/AttributeSet;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="freeCameraMemory" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="isStreaming" jni-signature="()Z" bridge="false" native="false" return="boolean" jni-return="Z" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="resumePlayback" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setDisplayMode" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="s" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOverlayBackgroundColor" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="c" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOverlayPaint" jni-signature="(Landroid/graphics/Paint;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p" type="android.graphics.Paint" jni-type="Landroid/graphics/Paint;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOverlayPosition" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="p" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setOverlayTextColor" jni-signature="(I)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="c" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setResolution" jni-signature="(II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="w" type="int" jni-type="I"></parameter>
+        <parameter name="h" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSource" jni-signature="(Lcom/camera/simplemjpeg/MjpegInputStream;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="source" type="com.camera.simplemjpeg.MjpegInputStream" jni-type="Lcom/camera/simplemjpeg/MjpegInputStream;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="showFps" jni-signature="(Z)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="b" type="boolean" jni-type="Z"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="startPlayback" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="stopPlayback" jni-signature="()V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public"></method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="surfaceChanged" jni-signature="(Landroid/view/SurfaceHolder;III)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="holder" type="android.view.SurfaceHolder" jni-type="Landroid/view/SurfaceHolder;"></parameter>
+        <parameter name="f" type="int" jni-type="I"></parameter>
+        <parameter name="w" type="int" jni-type="I"></parameter>
+        <parameter name="h" type="int" jni-type="I"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="surfaceCreated" jni-signature="(Landroid/view/SurfaceHolder;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="holder" type="android.view.SurfaceHolder" jni-type="Landroid/view/SurfaceHolder;"></parameter>
+      </method>
+      <method abstract="false" deprecated="not deprecated" final="false" name="surfaceDestroyed" jni-signature="(Landroid/view/SurfaceHolder;)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="holder" type="android.view.SurfaceHolder" jni-type="Landroid/view/SurfaceHolder;"></parameter>
+      </method>
+      <field deprecated="not deprecated" final="false" name="IMG_HEIGHT" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="false" name="IMG_WIDTH" jni-signature="I" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="POSITION_LOWER_LEFT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="12" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="POSITION_LOWER_RIGHT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="6" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="POSITION_UPPER_LEFT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="9" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="POSITION_UPPER_RIGHT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="SIZE_BEST_FIT" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="SIZE_FULLSCREEN" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="SIZE_STANDARD" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="TAG" jni-signature="Ljava/lang/String;" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;MJPEG&quot;" visibility="public" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Thread" extends-generic-aware="java.lang.Thread" jni-extends="Ljava/lang/Thread;" final="false" name="MjpegView.MjpegViewThread" static="false" visibility="public" jni-signature="Lcom/camera/simplemjpeg/MjpegView$MjpegViewThread;">
+      <constructor deprecated="not deprecated" final="false" name="MjpegView.MjpegViewThread" jni-signature="(Lcom/camera/simplemjpeg/MjpegView;Landroid/view/SurfaceHolder;Landroid/content/Context;)V" bridge="false" static="false" type="com.camera.simplemjpeg.MjpegView.MjpegViewThread" synthetic="false" visibility="public">
+        <parameter name="surfaceHolder" type="android.view.SurfaceHolder" jni-type="Landroid/view/SurfaceHolder;"></parameter>
+        <parameter name="context" type="android.content.Context" jni-type="Landroid/content/Context;"></parameter>
+      </constructor>
+      <method abstract="false" deprecated="not deprecated" final="false" name="setSurfaceSize" jni-signature="(II)V" bridge="false" native="false" return="void" jni-return="V" static="false" synchronized="false" synthetic="false" visibility="public">
+        <parameter name="width" type="int" jni-type="I"></parameter>
+        <parameter name="height" type="int" jni-type="I"></parameter>
+      </method>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="R" static="false" visibility="public" jni-signature="Lcom/camera/simplemjpeg/R;">
+      <constructor deprecated="not deprecated" final="false" name="R" jni-signature="()V" bridge="false" static="false" type="com.camera.simplemjpeg.R" synthetic="false" visibility="public"></constructor>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="R.array" static="true" visibility="public" jni-signature="Lcom/camera/simplemjpeg/R$array;">
+      <constructor deprecated="not deprecated" final="false" name="R.array" jni-signature="()V" bridge="false" static="false" type="com.camera.simplemjpeg.R.array" synthetic="false" visibility="public"></constructor>
+      <field deprecated="not deprecated" final="true" name="resolution_array" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131034112" visibility="public" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="R.attr" static="true" visibility="public" jni-signature="Lcom/camera/simplemjpeg/R$attr;">
+      <constructor deprecated="not deprecated" final="false" name="R.attr" jni-signature="()V" bridge="false" static="false" type="com.camera.simplemjpeg.R.attr" synthetic="false" visibility="public"></constructor>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="R.drawable" static="true" visibility="public" jni-signature="Lcom/camera/simplemjpeg/R$drawable;">
+      <constructor deprecated="not deprecated" final="false" name="R.drawable" jni-signature="()V" bridge="false" static="false" type="com.camera.simplemjpeg.R.drawable" synthetic="false" visibility="public"></constructor>
+      <field deprecated="not deprecated" final="true" name="ic_launcher" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130837504" visibility="public" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="R.id" static="true" visibility="public" jni-signature="Lcom/camera/simplemjpeg/R$id;">
+      <constructor deprecated="not deprecated" final="false" name="R.id" jni-signature="()V" bridge="false" static="false" type="com.camera.simplemjpeg.R.id" synthetic="false" visibility="public"></constructor>
+      <field deprecated="not deprecated" final="true" name="address1_decrement" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099655" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="address1_increment" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099653" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="address1_input" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099654" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="address2_decrement" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099658" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="address2_increment" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099656" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="address2_input" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099657" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="address3_decrement" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099661" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="address3_increment" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099659" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="address3_input" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099660" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="address4_decrement" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099664" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="address4_increment" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099662" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="address4_input" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099663" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="command_input" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099669" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="command_radiogroup" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099670" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="command_streaming" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099671" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="command_videofeed" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099672" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="height_input" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099652" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="mv" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099648" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="port_80" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099667" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="port_8080" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099668" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="port_input" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099665" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="port_radiogroup" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099666" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="resolution_spinner" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099650" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="settings" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099649" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="settings_done" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099673" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="width_input" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2131099651" visibility="public" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="R.layout" static="true" visibility="public" jni-signature="Lcom/camera/simplemjpeg/R$layout;">
+      <constructor deprecated="not deprecated" final="false" name="R.layout" jni-signature="()V" bridge="false" static="false" type="com.camera.simplemjpeg.R.layout" synthetic="false" visibility="public"></constructor>
+      <field deprecated="not deprecated" final="true" name="main" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130903040" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="option_menu" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130903041" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="settings" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130903042" visibility="public" volatile="false"></field>
+    </class>
+    <class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" jni-extends="Ljava/lang/Object;" final="true" name="R.string" static="true" visibility="public" jni-signature="Lcom/camera/simplemjpeg/R$string;">
+      <constructor deprecated="not deprecated" final="false" name="R.string" jni-signature="()V" bridge="false" static="false" type="com.camera.simplemjpeg.R.string" synthetic="false" visibility="public"></constructor>
+      <field deprecated="not deprecated" final="true" name="address_dot" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968585" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="app_name" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968576" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="command_setting_label" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968582" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="command_streaming" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968590" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="command_streaming_with_explanation" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968592" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="command_videofeed" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968591" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="command_videofeed_with_explanation" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968593" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="digits_decrement" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968584" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="digits_increment" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968583" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="ip_setting_label" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968580" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="port_80" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968586" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="port_8080" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968587" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="port_8080_with_explanation" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968589" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="port_80_with_explanation" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968588" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="port_setting_label" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968581" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="resolution_label" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968578" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="resolution_times" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968579" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="settings" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968577" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="settings_done" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968594" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="title_connecting" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968596" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="title_disconnected" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968595" visibility="public" volatile="false"></field>
+      <field deprecated="not deprecated" final="true" name="title_imageerror" jni-signature="I" static="true" transient="false" type="int" type-generic-aware="int" value="2130968597" visibility="public" volatile="false"></field>
+    </class>
+  </package>
+</api>

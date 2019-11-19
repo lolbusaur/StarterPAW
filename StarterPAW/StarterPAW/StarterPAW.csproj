@@ -6,13 +6,36 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Libraries\armeabi-v7a\libImageProc.so" />
+    <None Remove="Libraries\x86\libImageProc.so" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />  
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\BindingProject\BindingProject.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Libraries\armeabi-v7a\libImageProc.so" />
+    <Content Include="Libraries\x86\libImageProc.so" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\ViewVideo.xaml.cs">
+      <DependentUpon>ViewVideo.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\ViewSuggestedTimes.xaml.cs">
       <DependentUpon>ViewSuggestedTimes.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\ViewVideo.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
