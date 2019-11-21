@@ -14,7 +14,7 @@ namespace StarterPAW.Services
         {
             items = new List<Item>()
             {
-                new Item(){Time = "00:00:00", Date = "01/01/1970"}
+                
             };
         }
 
