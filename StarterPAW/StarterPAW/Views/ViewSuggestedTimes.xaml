@@ -58,7 +58,7 @@
                                 <Span Text="TEST STRING PLEASE IGNORE" />
                                 <Span Text=" " />
                                 <Span Text="TESTIER STRING PLEASE IGNORE" FontAttributes="Bold" />
-                                <Span Text=" " />
+                                <Span Text="" />
                                 <Span Text="." />
                             </FormattedString.Spans>
                         </FormattedString>

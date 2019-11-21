@@ -14,7 +14,7 @@ namespace StarterPAW.Services
         {
             items = new List<Item>()
             {
-                
+
             };
         }
 
@@ -52,5 +52,11 @@ namespace StarterPAW.Services
             return await Task.FromResult(items);
         }
 
+        public List<string> GetTimes()
+        {
+            IEnumerable<string> query = from Item item in items select item.Time;
+            List<string> collec = query.ToList();
+            return collec;
+        }
     }
 }
