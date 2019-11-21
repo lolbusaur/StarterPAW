@@ -77,8 +77,9 @@ public class StateObject
                 // Establish the remote endpoint for the socket.  
                 // The name of the    
                 IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
-                IPAddress ipAddress = ipHostInfo.AddressList[0];
-                IPEndPoint remoteEP = new IPEndPoint(ipAddress, port);
+                IPAddress ipAddress = ipHostInfo.AddressList[1];
+                IPAddress ep = IPAddress.Parse("10.2.14.201");
+                IPEndPoint remoteEP = new IPEndPoint(ep, port);
 
                 // Create a TCP/IP socket.  
                 Socket client = new Socket(ipAddress.AddressFamily,
@@ -103,6 +104,18 @@ public class StateObject
                 // Release the socket.  
                 client.Shutdown(SocketShutdown.Both);
                 client.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+        }
+
+        public void CloseClient()
+        {
+            try
+            {
+
             }
             catch (Exception e)
             {

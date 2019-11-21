@@ -30,13 +30,7 @@
             </x:Arguments>
         </NavigationPage>
 
-        <NavigationPage Title="View Live Feed">
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_feed.png"/>
-                </OnPlatform>
-            </NavigationPage.Icon>
-        </NavigationPage>
+
     </TabbedPage.Children>
     
 </TabbedPage>
