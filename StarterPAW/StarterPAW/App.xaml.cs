@@ -24,7 +24,7 @@ namespace StarterPAW
 
         protected override void OnStart()
         {
-            AsynchronousClient client = new AsynchronousClient();
+            AsynchronousClient client = new AsynchronousClient("temp");
             client.StartClient();
         }
 

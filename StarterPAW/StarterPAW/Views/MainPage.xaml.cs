@@ -17,10 +17,4 @@ namespace StarterPAW.Views
         }
     }
 
-    
-}
-
-namespace StarterPAW.Comms
-{
-
 }

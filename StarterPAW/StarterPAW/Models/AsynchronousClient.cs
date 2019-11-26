@@ -10,55 +10,70 @@ namespace StarterPAW.Models
 {
     public class AsynchronousClient
     {
+        
+        public AsynchronousClient()
+        {
+            message = String.Empty;
+        }
+
+        public AsynchronousClient(string message)
+        {
+            this.message = message;
+        }
+
         // The port number for the remote device.  
         private int port = 8080;
 
         // ManualResetEvent instances signal completion.  
-        private static ManualResetEvent connectDone =
-            new ManualResetEvent(false);
-        private static ManualResetEvent sendDone =
-            new ManualResetEvent(false);
-        private static ManualResetEvent receiveDone =
-            new ManualResetEvent(false);
+        private static ManualResetEvent connectDone = new ManualResetEvent(false);
+        private static ManualResetEvent sendDone = new ManualResetEvent(false);
+        private static ManualResetEvent receiveDone = new ManualResetEvent(false);
 
         // The response from the remote device.  
         private static String response = String.Empty;
+        private string message;
 
         public void StartClient()
         {
             // Connect to a remote device.  
             try
             {
-                // Establish the remote endpoint for the socket.  
-                // The name of the    
+                // Declare IP address for application device.
                 IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
                 IPAddress ipAddress = ipHostInfo.AddressList[1];
-                IPAddress ep = IPAddress.Parse("10.2.14.201");
+
+                // Declare endpoint address, currently hardcoded for Honeywell IP.
+                IPAddress ep = IPAddress.Parse("192.168.0.129");
                 IPEndPoint remoteEP = new IPEndPoint(ep, port);
 
-                // Create a TCP/IP socket.  
-                Socket client = new Socket(ipAddress.AddressFamily,
-                    SocketType.Stream, ProtocolType.Tcp);
+                // Create a TCP/IP socket.
+                Socket client = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
-                // Connect to the remote endpoint.  
-                client.BeginConnect(remoteEP,
-                    new AsyncCallback(ConnectCallback), client);
+                // Connect to the python server.
+                client.BeginConnect(remoteEP, new AsyncCallback(ConnectCallback), client);
                 connectDone.WaitOne();
 
-                // Send test data to the remote device.  
-                Send(client, Device.RuntimePlatform);
-                sendDone.WaitOne();
+                // Send test data to the remote device.
+                if (!message.Equals(string.Empty))
+                {
+                    Send(client, message);
+                    sendDone.WaitOne();
+                } else
+                {
+                    Send(client, "Message is empty");
+                    sendDone.WaitOne();
+                }
 
-                // Receive the response from the remote device.  
+                // Receive the response from the remote device.
                 Receive(client);
                 receiveDone.WaitOne();
 
-                // Write the response to the console.  
+                // Write the response to the console.
                 Console.WriteLine("Response received : {0}", response);
 
-                // Release the socket.  
-                client.Shutdown(SocketShutdown.Both);
-                client.Close();
+                // Release the socket.
+                //client.Shutdown(SocketShutdown.Both);
+                //client.Close();
             }
             catch (Exception e)
             {

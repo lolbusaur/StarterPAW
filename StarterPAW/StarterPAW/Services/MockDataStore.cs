@@ -58,5 +58,43 @@ namespace StarterPAW.Services
             List<string> collec = query.ToList();
             return collec;
         }
+
+        public List<string> CalcAve(List<string> list)
+        {
+            int[,] ParseArr = new int[list.Count, 3];
+
+            //Splits the string into 3 parts, then parses each string array to integers and stores them in an array
+            for(int i = 0; i < list.Count; i++)
+            {
+                string s = list[i];
+                string[] TempString = s.Split(':');
+                for(int j = 0; j < 3; j++)
+                {
+                    ParseArr[i, j] = Int32.Parse(TempString[j]);
+                }
+            }
+
+            //Computes the average hour, minute, and second then store in an array
+            int[] AveTime = new int[3];
+            for(int i = 0; i < 3; i++)
+            {
+                int ColumnTotal = 0;
+                for(int j = 0; j < list.Count; j++)
+                {
+                    ColumnTotal += ParseArr[i,j];
+                }
+                AveTime[i] = (ColumnTotal/list.Count);
+            }
+
+            //Concatenate the time into readable format, then store in list and return list
+            string ConcatTime = "";
+            ConcatTime += AveTime[0].ToString() + ":" + AveTime[1].ToString() + ":" + AveTime[2].ToString();
+            List<string> ReturnList = new List<string>
+            {
+                ConcatTime
+            };
+
+            return ReturnList;
+        }
     }
 }

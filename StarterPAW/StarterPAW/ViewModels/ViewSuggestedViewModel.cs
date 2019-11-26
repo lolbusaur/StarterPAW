@@ -5,12 +5,14 @@ using System.Windows.Input;
 using StarterPAW.Models;
 using Xamarin.Forms;
 
+
 namespace StarterPAW.ViewModels
 {
     public class ViewSuggestedViewModel : BaseViewModel
     {
         public ViewSuggestedViewModel()
         {
+
             Title = "Suggested Feeding Times";
             AsynchronousClient client = new AsynchronousClient();
             
