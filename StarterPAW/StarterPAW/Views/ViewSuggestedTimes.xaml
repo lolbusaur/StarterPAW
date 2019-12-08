@@ -55,9 +55,9 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Text="TEST STRING PLEASE IGNORE" />
+                                <Span Text="The current temperature is" />
                                 <Span Text=" " />
-                                <Span Text="TESTIER STRING PLEASE IGNORE" FontAttributes="Bold" />
+                                <Span Text="{Binding current}"/>
                                 <Span Text="" />
                                 <Span Text="." />
                             </FormattedString.Spans>
@@ -68,7 +68,7 @@
                         Command="{Binding SendString}"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="GhostWhite" />
-                <Button Margin="0,10,0,0" Text="Generate New Times"
+                <Button Margin="0,10,0,0" Text="Generate New Time"
                         Clicked="DisplayPrompt"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="GhostWhite" />

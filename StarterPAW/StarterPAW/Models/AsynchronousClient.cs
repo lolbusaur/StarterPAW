@@ -43,11 +43,12 @@ namespace StarterPAW.Models
                 IPAddress ipAddress = ipHostInfo.AddressList[1];
 
                 // Declare endpoint address, currently hardcoded for Honeywell IP.
-                IPAddress ep = IPAddress.Parse("192.168.0.129");
+                IPAddress ep = IPAddress.Parse("184.54.202.199");
                 IPEndPoint remoteEP = new IPEndPoint(ep, port);
 
                 // Create a TCP/IP socket.
                 Socket client = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                client.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, true);
 
                 // Connect to the python server.
                 client.BeginConnect(remoteEP, new AsyncCallback(ConnectCallback), client);
@@ -72,7 +73,7 @@ namespace StarterPAW.Models
                 Console.WriteLine("Response received : {0}", response);
 
                 // Release the socket.
-                //client.Shutdown(SocketShutdown.Both);
+                client.Disconnect(true);
                 //client.Close();
             }
             catch (Exception e)
@@ -161,12 +162,19 @@ namespace StarterPAW.Models
 
         private static void Send(Socket client, String data)
         {
-            // Convert the string data to byte data using ASCII encoding.  
-            byte[] byteData = Encoding.ASCII.GetBytes(data);
+            try
+            {
+                // Convert the string data to byte data using ASCII encoding.  
+                byte[] byteData = Encoding.ASCII.GetBytes(data);
 
-            // Begin sending the data to the remote device.  
-            client.BeginSend(byteData, 0, byteData.Length, 0,
-                new AsyncCallback(SendCallback), client);
+                // Begin sending the data to the remote device.  
+                client.BeginSend(byteData, 0, byteData.Length, 0, new AsyncCallback(SendCallback), client);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+            
         }
 
         private static void SendCallback(IAsyncResult ar)
@@ -192,6 +200,11 @@ namespace StarterPAW.Models
         public void SetPort(int port)
         {
             port = this.port;
+        }
+
+        public string GetResponse()
+        {
+            return response;
         }
     }
 }
