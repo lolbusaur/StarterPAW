@@ -22,6 +22,7 @@ namespace StarterPAW.Views
             InitializeComponent();
         }
 
+
         async void DisplayPrompt (object sender, EventArgs e)
         {
             bool answer = await DisplayAlert("Schedule Select", "Would you like to calculate the optimized time to feed your cat daily?", "Yes", "No");

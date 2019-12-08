@@ -16,7 +16,7 @@ namespace StarterPAW.ViewModels
             Title = "Suggested Feeding Times";
             AsynchronousClient client = new AsynchronousClient();
             
-            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://www.reddit.com/r/magicthecirclejerking")));
+            OpenWebCommand = new Command(() => Device.OpenUri(new Uri("https://184.54.202.199:8000")));
             SendString = new Command(() => client.StartClient());
         }
 

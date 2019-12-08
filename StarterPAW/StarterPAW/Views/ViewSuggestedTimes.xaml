@@ -72,6 +72,10 @@
                         Clicked="DisplayPrompt"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="GhostWhite" />
+                <Button Margin="0,10,0,0" Text="Live View"
+                        Command="{Binding OpenWebCommand}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="GhostWhite" />
             </StackLayout>
         </ScrollView>
     </Grid>

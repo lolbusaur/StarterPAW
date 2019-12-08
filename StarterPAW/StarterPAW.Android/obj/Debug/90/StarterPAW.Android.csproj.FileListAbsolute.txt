@@ -1040,3 +1040,4 @@ C:\Users\H362723\source\repos\StarterPAW\StarterPAW\StarterPAW.Android\obj\Debug
 C:\Users\H362723\source\repos\StarterPAW\StarterPAW\StarterPAW.Android\obj\Debug\90\res\drawable\xamarin_logo.png
 C:\Users\H362723\source\repos\StarterPAW\StarterPAW\StarterPAW.Android\obj\Debug\90\R.cs.flag
 C:\Users\H362723\source\repos\StarterPAW\StarterPAW\StarterPAW.Android\obj\Debug\90\uploadflags.txt
+C:\Users\H362723\source\repos\StarterPAW\StarterPAW\StarterPAW.Android\obj\Debug\90\android\assets\System.Runtime.dll
