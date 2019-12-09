@@ -43,7 +43,7 @@ namespace StarterPAW.Models
                 IPAddress ipAddress = ipHostInfo.AddressList[1];
 
                 // Declare endpoint address, currently hardcoded for Honeywell IP.
-                IPAddress ep = IPAddress.Parse("184.54.202.199");
+                IPAddress ep = IPAddress.Parse("10.16.219.247");
                 IPEndPoint remoteEP = new IPEndPoint(ep, port);
 
                 // Create a TCP/IP socket.

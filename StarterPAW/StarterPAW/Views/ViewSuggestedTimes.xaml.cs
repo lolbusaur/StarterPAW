@@ -35,7 +35,9 @@ namespace StarterPAW.Views
             }
             else
             {
-                
+                AsynchronousClient client = new AsynchronousClient("next");
+                client.StartClient();
+
             }
         }
     }
