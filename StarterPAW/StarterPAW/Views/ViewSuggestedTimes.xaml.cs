@@ -12,34 +12,12 @@ namespace StarterPAW.Views
     [DesignTimeVisible(false)]
     public partial class AboutPage : ContentPage
     {
-        public string OptTime
-        {
-            get; set;
-        }
 
         public AboutPage()
         {
             InitializeComponent();
         }
 
-
-        async void DisplayPrompt (object sender, EventArgs e)
-        {
-            bool answer = await DisplayAlert("Schedule Select", "Would you like to calculate the optimized time to feed your cat daily?", "Yes", "No");
-            if (answer)
-            {
-                AsynchronousClient client = new AsynchronousClient("time");
-                client.StartClient();
-                OptTime = client.GetResponse();
-                Console.WriteLine("OPTIMZED TIME: " + OptTime);
-            }
-            else
-            {
-                AsynchronousClient client = new AsynchronousClient("next");
-                client.StartClient();
-
-            }
-        }
     }
 
 }

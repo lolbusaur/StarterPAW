@@ -45,7 +45,7 @@
                             <FormattedString.Spans>
                                 <Span Text="The following is the average feeding time your cat(s) expect:" />
                                 <Span Text=" " />
-                                <Span Text="[PLACEHOLDER]" FontAttributes="Bold" />
+                                <Span Text="{Binding Time}" FontAttributes="Bold" />
                                 <Span Text="." />
                             </FormattedString.Spans>
                         </FormattedString>
@@ -57,19 +57,23 @@
                             <FormattedString.Spans>
                                 <Span Text="The current temperature is" />
                                 <Span Text=" " />
-                                <Span Text="{Binding current}"/>
+                                <Span Text="{Binding Temperature}" FontAttributes="Bold"/>
                                 <Span Text="" />
                                 <Span Text="." />
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Button Margin="0,10,0,0" Text="Send New Time"
-                        Command="{Binding SendString}"
+                <Button Margin="0,10,0,0" Text="Advance Feeding"
+                        Command="{Binding NextFeeding}"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="GhostWhite" />
                 <Button Margin="0,10,0,0" Text="Generate New Time"
-                        Clicked="DisplayPrompt"
+                        Command="{Binding GetTime}"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="GhostWhite" />
+                <Button Margin="0,10,0,0" Text="Update Temperature"
+                        Command="{Binding GetTemp}"
                         BackgroundColor="{StaticResource Primary}"
                         TextColor="GhostWhite" />
                 <Button Margin="0,10,0,0" Text="Live View"
